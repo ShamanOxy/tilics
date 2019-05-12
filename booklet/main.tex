@@ -1,0 +1,123 @@
+% tilics/booklet/main.tex
+
+% 2019-05-11 christian.tschudin@unibas.ch
+
+\documentclass{tilics}
+
+% ----------------------------------------------------------------------
+\begin{document}
+  % \pagecolor{yellow}
+  \pagecolor{UnibasMint}
+  \hfill\includegraphics{figs/start-notext-scaled.pdf}
+
+  \vspace*{\fill}{\color{UnibasRed}
+    \noindent{\Huge\bf 2\raisebox{0.5em}{5} Things I Learned}
+    \vskip 1mm
+    \noindent{\Huge\bf in Computer Science}
+  }
+
+  \vskip 4mm\noindent{\large
+    University of Basel, Dept of Mathematics and Computer Science
+  }
+
+%  % first page (odd) with title
+%  \newpage\pagecolor{white}\topskip 0pt\leftBar\vspace*{\fill}\hfill
+%  {\Large 2\raisebox{0.5em}{5} Things I Learned in Computer Science}
+%  \hfill\vspace*{\fill}%
+
+  % 2nd page (odd) with affiliation
+  \newpage\pagecolor{white}\rightBar\vspace*{\fill}
+  \noindent
+  {\small University of Basel, Dept of Mathematics and Computer Science}
+
+  % 3rd page (even) with (?author and) title
+  \newpage
+  \newgeometry{left=2cm,right=2cm}
+  \voffset 0.4in%\hoffset 0.1in
+
+  \leftBar\vspace*{\fill}
+  \noindent{\Huge\bf 2\raisebox{0.5em}{5} Things I Learned}
+  \vskip 1mm
+  \noindent{\Huge\bf in Computer Science}
+
+  % 4th page (odd) with copyright, year
+  \newpage\rightBar\vspace*{\fill}
+  {\small\raggedright
+    \noindent
+    \copyright\ 2019, University of Basel, Dept of Mathematics and Computer Science
+
+    \noindent
+    https://dmi.unibas.ch/
+
+    \noindent
+    CC license
+  }
+
+  % 5th page (even) with dedication
+  \newpage\leftBar\vspace*{\fill}
+  \noindent\hfill{\small To {\em some dedication goes here}}\hfill
+  \vspace*{\fill}
+  
+  % 6rd page (even) with Author's Note
+  \newpage\rightBar\vspace*{\fill}
+  \noindent{\Large Author's Note}
+  \vskip 5mm\small
+  \noindent\blindtext
+  \vspace*{\fill}
+
+  % 7th page (odd) with continuation of Author's Note
+  \newpage\leftBar\vspace*{\fill}
+  \noindent{\small \blindtext}
+  \vspace*{\fill}
+
+  % 8th page (even) with acknowledgements
+  \newpage\rightBar\vspace*{\fill}
+  \noindent{\Large Acknowledgements}
+  \vskip 5mm\noindent
+  {\small \blindtext}
+  \vspace*{\fill}
+
+  % 9th page (even) with title
+  \newpage\leftBar\vspace*{\fill}\hfill
+  \Large 2\raisebox{0.5em}{5} Things I Learned in Computer Science
+  \hfill\vspace*{\fill}
+
+  % loop over all article
+  \foreach \n in {1,...,101}{
+     \IfFileExists{articles/\n/fig.pdf}{
+       \typeout{Article \n  ...}
+
+       % left side (even page):
+       \inputFig{articles/\n/fig.pdf}
+
+       % right side (odd page):
+       \inputText{articles/\n/txt.tex}
+     }{}
+  }
+
+  \newpage\rightBar\vspace*{\fill}
+  \small
+  \noindent{\bf Seminar participants (spring semester 2019):}
+
+  \vskip 1em
+  \noindent
+  \begin{tabular}{p{3.8cm}p{3.5cm}p{3.5cm}}
+    Fabricio Arend Torres &  Patrick Kahr         &  Christian Tschudin   \\
+    Nils Bühlmann         &  Marcel Lüthi         &  Marco Vogt           \\ 
+    Rebecca Dold          &  Sebastian Philipps   &  Moira Zuber          \\
+    Simon Dold            &  Linard Schwendener   &  \\
+    Omnia Kahla           &  Tim Steindl          &  \\
+  \end{tabular}
+  \vspace*{\fill}%
+
+  % last inner (empty) page
+  \newpage\leftBar
+  \
+
+  % empty page (back)
+  \newpage\pagecolor{UnibasMint}
+  \ 
+
+\end{document}
+
+% eof
