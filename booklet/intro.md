@@ -2,4 +2,4 @@ Studying Computer Science is like taking a deep dive into an endless ocean of id
 
 It is easy to get lost in this wide landscape, even more so if it is not one's main field of expertise. This is why Computer Science students of the University of Basel set out to identify the essential concepts and ideas they learned during  their studies and make them accessible to people outside of our field. 
 
-The result is Things I Learned in Computer Science, a small booklet with 2^5 illustrated articles about what we consider to be the essential lessons we learned while exploring this science.
+The result is *Things I Learned in Computer Science*, a small booklet with 2^5 illustrated articles about what we consider to be the essential lessons we learned while exploring this science.
