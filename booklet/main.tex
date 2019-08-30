@@ -27,8 +27,9 @@
 
   % 2nd page (odd) with affiliation
   \newpage\pagecolor{white}\rightBar\vspace*{\fill}
-  \noindent
-  {\small University of Basel, Dept of Mathematics and Computer Science}
+  \ 
+  %\noindent
+  %{\small University of Basel, Dept of Mathematics and Computer Science}
 
   % 3rd page (even) with (?author and) title
   \newpage
@@ -49,38 +50,42 @@
     \noindent
     https://dmi.unibas.ch/
 
+    \vspace*{0.5cm}
     \noindent
-    CC license
+    \includegraphics[width=2cm]{figs/creative-commons-by_sa_4_0.pdf}
+    \hspace*{1mm}
+    \raisebox{0.5pt}{\tt https://creativecommons.org/licenses/by-sa/4.0/}
   }
 
-  % 5th page (even) with dedication
-  \newpage\leftBar\vspace*{\fill}
-  \noindent\hfill{\small To {\em some dedication goes here}}\hfill
-  \vspace*{\fill}
+  %% 5th page (even) with dedication
+  %\newpage\leftBar\vspace*{\fill}
+  %\noindent\hfill{\small To {\em some dedication goes here}}\hfill
+  %\vspace*{\fill}
   
   % 6rd page (even) with Author's Note
   \newpage\rightBar\vspace*{\fill}
   \noindent{\Large Author's Note}
   \vskip 5mm\small
-  \noindent\blindtext
+  %\noindent\blindtext
+  \input{intro.tex}
   \vspace*{\fill}
 
-  % 7th page (odd) with continuation of Author's Note
-  \newpage\leftBar\vspace*{\fill}
-  \noindent{\small \blindtext}
-  \vspace*{\fill}
+  %% 7th page (odd) with continuation of Author's Note
+  %\newpage\leftBar\vspace*{\fill}
+  %\noindent{\small \blindtext}
+  %\vspace*{\fill}
 
-  % 8th page (even) with acknowledgements
-  \newpage\rightBar\vspace*{\fill}
-  \noindent{\Large Acknowledgements}
-  \vskip 5mm\noindent
-  {\small \blindtext}
-  \vspace*{\fill}
+  %% 8th page (even) with acknowledgements
+  %\newpage\rightBar\vspace*{\fill}
+  %\noindent{\Large Acknowledgements}
+  %\vskip 5mm\noindent
+  %{\small \blindtext}
+  %\vspace*{\fill}
 
-  % 9th page (even) with title
-  \newpage\leftBar\vspace*{\fill}\hfill
-  \Large 2\raisebox{0.5em}{5} Things I Learned in Computer Science
-  \hfill\vspace*{\fill}
+  %% 9th page (even) with title
+  %\newpage\leftBar\vspace*{\fill}\hfill
+  %\Large 2\raisebox{0.5em}{5} Things I Learned in Computer Science
+  %\hfill\vspace*{\fill}
 
   % loop over all article
   \foreach \n in {1,...,101}{
@@ -116,7 +121,9 @@
 
   % empty page (back)
   \newpage\pagecolor{UnibasMint}
-  \ 
+  \vspace*{7.2cm}
+  \hfill
+  {\tt https://tilics.dmi.unibas.ch/}\hspace*{-0.85cm}
 
 \end{document}
 
