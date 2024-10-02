@@ -1,5 +1,5 @@
 <!-- BEGIN TITLE -->
-## "What Supermarkets Can Teach Us About Data Structure?"
+## What Supermarkets Can Teach Us About Data Structure?
 <!-- END TITLE -->
 
 
