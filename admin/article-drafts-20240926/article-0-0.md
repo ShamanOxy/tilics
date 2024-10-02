@@ -2,7 +2,7 @@
 ## "What Supermarkets Can Teach Us About Data Structure?"
 <!-- END TITLE -->
 
-## <img src="../article-drafts-20240926/figures/image-088-stack-queue.jpg">
+
 <img src="../article-drafts-20240926/figures/image-088-stack-queue.jpg" style="width: 50%;">
 
 <!-- BEGIN BODY -->
