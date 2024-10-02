@@ -1,3 +1,5 @@
+**What Supermarkets Can Teach Us About Data Structure** **？**
+
 Imagine in a supermarket. When restocking, The employee usually places new items at the front of the existing ones. Customers typically take items from the outermost position. In this way, the most recently added products are the first to be purchased. In computer science, this is called 'stacks', , following the "Last In, First Out" (LIFO) principle.
 
  
