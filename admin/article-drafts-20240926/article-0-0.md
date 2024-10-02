@@ -15,5 +15,5 @@ Programmers do this as well, queues and stacks are simple yet powerful tools in 
 
 ## Author
 <!-- BEGIN AUTHOR -->
-Jue DU and Chengrui Liu
+Jue Du and Chengrui Liu
 <!-- END AUTHOR -->
