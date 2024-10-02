@@ -1,6 +1,6 @@
 # Search Smarter Not Harder
 
-![](article-0-20-binary_search.png)
+<img src="./figures/article-0-20-binary_search.png" width="800"/>
 
 What would you do, if you are given a list of sorted entries and asked to find a particular one? 
 You could read through the list, until you find the correct entry. 
